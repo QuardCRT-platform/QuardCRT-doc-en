@@ -1,3 +1,5 @@
+<div style="text-align: right"><a href="../../en/latest/installation.html">🇺🇸 English</a> | <a href="../../zh-cn/latest/installation.html">🇨🇳 简体中文</a> | <a href="../../zh-tw/latest/installation.html">🇭🇰 繁體中文</a> | <a href="../../ja/latest/installation.html">🇯🇵 日本語</a></div>
+
 # Installation
 
 QuardCRT is a cross-platform terminal emulator, it supports Windows, MacOS, and Linux. You can download the corresponding package according to your platform.

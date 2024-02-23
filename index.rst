@@ -1,3 +1,7 @@
+.. raw:: html
+
+   <div style="text-align: right"><a href="../../en/latest/index.html">🇺🇸 English</a> | <a href="../../zh-cn/latest/index.html">🇨🇳 简体中文</a> | <a href="../../zh-tw/latest/index.html">🇭🇰 繁體中文</a> | <a href="../../ja/latest/index.html">🇯🇵 日本語</a></div>
+
 quardCRT
 ----------------------------------
 
@@ -38,9 +42,6 @@ quardCRT
    :target: https://gitee.com/QQxiaoming/quardCRT
    :alt: Gitee forks
 
-********
-quardCRT
-********
 .. image:: ./img/windows.png
 .. image:: ./img/macos.png
 .. image:: ./img/linux.png
