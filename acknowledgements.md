@@ -1,3 +1,5 @@
+<div style="text-align: right"><a href="../../en/latest/acknowledgements.html">🇺🇸 English</a> | <a href="../../zh-cn/latest/acknowledgements.html">🇨🇳 简体中文</a> | <a href="../../zh-tw/latest/acknowledgements.html">🇭🇰 繁體中文</a> | <a href="../../ja/latest/acknowledgements.html">🇯🇵 日本語</a></div>
+
 # Acknowledgements
 
 The code of this project references or partially refers to or depends on the following open source projects. The project fully respects the open source agreement of the original project and would like to express its gratitude.
@@ -21,3 +23,4 @@ The code of this project references or partially refers to or depends on the fol
 - [qvncclient](https://bitbucket.org/amahta/qvncclient)
 - [qhexedit](https://github.com/Simsys/qhexedit2)
 - [QGoodWindow](https://github.com/antonypro/QGoodWindow)
+- [qzmodem](https://github.com/QQxiaoming/qzmodem)
