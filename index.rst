@@ -106,8 +106,8 @@ quardCRT supports plugins from version V0.4.0, plugins will be provided in the f
    Installation<installation.md>
    Usage<usage.md>
    Configuration<configuration.md>
-   Script<scripts.md>
-   Plugin<plugins.md>
+   Scripts<scripts.md>
+   Plugins<plugins.md>
    FAQ<faq.md>
    Contributing<contributing.md>
    Changelog<changelog.md>
