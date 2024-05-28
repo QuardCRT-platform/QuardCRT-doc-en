@@ -4,13 +4,20 @@
 
 ## [[Unrelease](https://github.com/QQxiaoming/quardCRT)]
 
+- Add broadcast session feature #36
+- Fix the crash problem caused by modifying the configuration of the currently running session
+
+## [[V0.4.6](https://github.com/QQxiaoming/quardCRT/releases/tag/V0.4.6)] - 2024-05-26
+
 - Add setting main window theme color feature
 - Add status bar display session information feature
 - Add WSL terminal toolbar button on Windows
+- Add user-defined plugin loading path setting
 - Fix the issue that the working directory is not correctly cloned when cloning the tab in some shell environments
 - Fix the issue that the modification is saved when canceling the modification in the keyboard binding settings
 - Fix the issue that the confirmation dialog cannot select cancel when closing all tabs
 - Fix the issue that the session manager switches the current selected session incorrectly after modifying the session properties
+- Fix the issue that the new session may be created on the hidden tab group
 - Add pre-built plugins [CharacterCode](https://github.com/QuardCRT-platform/plugin-CharacterCode), [ListSerial](https://github.com/QuardCRT-platform/plugin-ListSerial), and update pre-built plugin [SearchOnWeb](https://github.com/QuardCRT-platform/plugin-SearchOnWeb) to V0.0.4 version
 
 ## [[V0.4.5](https://github.com/QQxiaoming/quardCRT/releases/tag/V0.4.5)] - 2024-04-26
