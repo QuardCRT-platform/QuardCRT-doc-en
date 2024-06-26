@@ -4,10 +4,16 @@
 
 ## [[Unrelease](https://github.com/QQxiaoming/quardCRT)]
 
+- Add echo feature
+
+## [[V0.4.7](https://github.com/QQxiaoming/quardCRT/releases/tag/V0.4.7)] - 2024-06-26
+
 - Add broadcast session feature [#36](https://github.com/QQxiaoming/quardCRT/issues/36)
 - Add label tag color feature
 - Add block selection (Shift+click) and column selection (Alt+Shift+click) feature
 - Add user-defined cursor color setting
+- Add tooltip for optional items in settings
+- Add advanced options to set the default startup shell for local terminal (default to $SHELL on Linux/MacOS, and default to the system built-in powershell on Windows, this function is only used to adjust the PowerShell version on Windows, not to start other shells, other shells please use LocalShell session to set specific commands)
 - Fix the crash problem caused by modifying the configuration of the currently running session
 - Fix the problem of incorrect pop-up position of the context menu in the case of multiple screens
 - Modify to switch to the tab when right-clicking on a non-current tab
@@ -16,7 +22,9 @@
 - Fix the problem of automatically trimming empty lines in the pasted content of text, and allow users to set enable/disable by themselves
 - Fix the unstable SSH initialization terminal size problem [#40](https://github.com/QQxiaoming/quardCRT/issues/40)
 - Fix the probability crash problem after the SSH remote actively ends
-- Update pre-built plugin [CharacterCode](https://github.com/QuardCRT-platform/plugin-CharacterCode) to V0.0.3
+- Fix font display abnormalities when restoring font settings to built-in fonts
+- Fix the abnormal window position problem caused by window movement/resize operations on Linux with multiple screens
+- Add pre-built plugins [TextStatistics](https://github.com/QuardCRT-platform/plugin-TextStatistics), and update pre-built plugin [CharacterCode](https://github.com/QuardCRT-platform/plugin-CharacterCode) to V0.0.3
 
 ## [[V0.4.6](https://github.com/QQxiaoming/quardCRT/releases/tag/V0.4.6)] - 2024-05-26
 
