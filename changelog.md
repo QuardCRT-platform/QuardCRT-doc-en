@@ -8,6 +8,10 @@
 - Fix the problem that some session types cannot reconnect
 - Add the feature that the session in a non-connected state can automatically reconnect by clicking the Enter key
 - Add the feature that the serial port automatically detects the physical connection disconnection
+- Add a refresh serial port button in the serial port selection page
+- Add up to four window split screen mode and multiple layout modes
+- Add single/group/all session three modes in the send command window
+- Fix the Telnet session storage configuration error in non-English environments, which causes connection problems [#IAADHZ](https://gitee.com/QQxiaoming/quardCRT/issues/IAADHZ)
 - Add pre-built plugins [timestamp](https://github.com/QuardCRT-platform/plugin-timestamp)
 
 ## [[V0.4.7](https://github.com/QQxiaoming/quardCRT/releases/tag/V0.4.7)] - 2024-06-26
