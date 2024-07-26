@@ -4,6 +4,10 @@
 
 ## [[Unrelease](https://github.com/QQxiaoming/quardCRT)]
 
+- Add Python scripting engine for scripting feature [#31](https://github.com/QQxiaoming/quardCRT/pull/31)
+
+## [[V0.4.8](https://github.com/QQxiaoming/quardCRT/releases/tag/V0.4.8)] - 2024-07-26
+
 - Add echo feature
 - Fix the problem that some session types cannot reconnect
 - Add the feature that the session in a non-connected state can automatically reconnect by clicking the Enter key
@@ -11,8 +15,14 @@
 - Add a refresh serial port button in the serial port selection page
 - Add up to four window split screen mode and multiple layout modes
 - Add single/group/all session three modes in the send command window
+- Add the plugin information page to display the plugin website
+- Add notification center
+- Add internal command window
+- Improve the context menu of URL recognition links
+- Improve the find window to automatically fill in the currently selected text each time it is opened
+- Improve status bar
 - Fix the Telnet session storage configuration error in non-English environments, which causes connection problems [#IAADHZ](https://gitee.com/QQxiaoming/quardCRT/issues/IAADHZ)
-- Add pre-built plugins [timestamp](https://github.com/QuardCRT-platform/plugin-timestamp)
+- Add pre-built plugins [timestamp](https://github.com/QuardCRT-platform/plugin-timestamp), and update pre-built plugin [ListSerial](https://github.com/QuardCRT-platform/plugin-ListSerial) to V0.0.3, update pre-built plugin [CharacterCode](https://github.com/QuardCRT-platform/plugin-CharacterCode) to V0.0.4 version
 
 ## [[V0.4.7](https://github.com/QQxiaoming/quardCRT/releases/tag/V0.4.7)] - 2024-06-26
 
