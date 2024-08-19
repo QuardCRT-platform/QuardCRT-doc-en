@@ -6,6 +6,13 @@
 
 - Add Python scripting engine for scripting feature [#31](https://github.com/QQxiaoming/quardCRT/pull/31)
 - Add the feature of selecting end-of-line sequence
+- Add status bar log information, SSH ciphers information
+- Add emphasized color border to the activated session in split screen mode
+- Add custom color feature to the highlight
+- Allow editing the text to be pasted when confirming multiple lines of paste
+- Fix the issue that clicking the new tab button in split screen mode may not create the session correctly or be located under the wrong tab group
+- Fix the issue that the SSH connection cannot be reconnected by tapping the Enter key in some cases
+- Fix the issue that the target session object is inaccurate when locking/unlocking the session
 
 ## [[V0.4.8](https://github.com/QQxiaoming/quardCRT/releases/tag/V0.4.8)] - 2024-07-26
 
