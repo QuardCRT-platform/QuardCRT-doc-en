@@ -96,6 +96,9 @@ Special functions
 - Path matching and one-click direct
 - Working path direct
 - Windows local terminal enhancement (Tab key to select complete command, etc.)
+- Broadcast session
+- Session label tag color
+- block selection (Shift+click) and column selection (Alt+Shift+click)
 
 ----------------------------------
 Plugin
@@ -110,6 +113,26 @@ Install from store
 .. image:: https://get.microsoft.com/images/en-us%20dark.svg
    :target: https://apps.microsoft.com/detail/quardCRT/9p6102k9qb3t?mode=direct
    :alt: Microsoft Store
+
+----------------------------------
+Donate
+----------------------------------
+
+If you like this project, you can donate to the author to support the development of the project.
+
+.. list-table:: 
+   :widths: 33 33 33
+   :header-rows: 0
+
+   * - .. image:: ./img/donate/paypal.jpg
+          :align: center
+     - .. image:: ./img/donate/alipay.jpg
+          :align: center
+     - .. image:: ./img/donate/wechat.jpg
+          :align: center
+   * - paypal
+     - alipay
+     - wechat
 
 .. toctree::
    :maxdepth: 3

@@ -4,15 +4,29 @@
 
 ## [[Unrelease](https://github.com/QQxiaoming/quardCRT)]
 
+- Automatically use the default configuration if the Profile does not exist on Windows
+- Add ToolTip to the connection bar
+- Add system beep support
+- Add record script feature
+- Improve the default path of recording logs, etc. to the last saved path
+- Fix the small probability memory leak problem
+
+## [[V0.5.0](https://github.com/QQxiaoming/quardCRT/releases/tag/V0.5.0)] - 2024-08-26
+
 - Add Python scripting engine for scripting feature [#31](https://github.com/QQxiaoming/quardCRT/pull/31)
 - Add the feature of selecting end-of-line sequence
 - Add status bar log information, SSH ciphers information
 - Add emphasized color border to the activated session in split screen mode
 - Add custom color feature to the highlight
 - Allow editing the text to be pasted when confirming multiple lines of paste
+- Allow the tab title to display a custom session name
+- Add custom Local Shell Profile path feature for Windows
 - Fix the issue that clicking the new tab button in split screen mode may not create the session correctly or be located under the wrong tab group
 - Fix the issue that the SSH connection cannot be reconnected by tapping the Enter key in some cases
 - Fix the issue that the target session object is inaccurate when locking/unlocking the session
+- Fix the issue that some functions in the context menu of the floating window cannot be used
+- Fix the issue of inconsistent new session names in different situations [#45](https://github.com/QQxiaoming/quardCRT/issues/45)
+- Update pre-built plugin [timestamp](https://github.com/QuardCRT-platform/plugin-timestamp) to V0.0.3
 
 ## [[V0.4.8](https://github.com/QQxiaoming/quardCRT/releases/tag/V0.4.8)] - 2024-07-26
 
