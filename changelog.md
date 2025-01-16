@@ -4,12 +4,27 @@
 
 ## [[Unrelease](https://github.com/QQxiaoming/quardCRT)]
 
+- Fix the main window error raise
+- Add the ability to add custom data to the log
+- Improve the log file path setting option
+- Add TFTP server configuration to settings
+- Add terminal recording video feature
+- Raw protocol adds four modes TCP Client, TCP Server, UDP Send, UDP Receive
+- Add view own log window for quardCRT self debug
+
+## [[V0.5.1](https://github.com/QQxiaoming/quardCRT/releases/tag/V0.5.1)] - 2024-09-26
+
 - Automatically use the default configuration if the Profile does not exist on Windows
 - Add ToolTip to the connection bar
 - Add system beep support
 - Add record script feature
+- Add recently loaded script feature
+- Add disable plugin command line option
+- Add reconfirm when closing the floating window
 - Improve the default path of recording logs, etc. to the last saved path
+- Improve the appearance of the session tabs
 - Fix the small probability memory leak problem
+- Update pre-built plugin [ListSerial](https://github.com/QuardCRT-platform/plugin-ListSerial) to V0.0.5
 
 ## [[V0.5.0](https://github.com/QQxiaoming/quardCRT/releases/tag/V0.5.0)] - 2024-08-26
 

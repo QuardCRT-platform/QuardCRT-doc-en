@@ -110,9 +110,13 @@ quardCRT supports plugins from version V0.4.0, plugins will be provided in the f
 Install from store
 ----------------------------------
 
-.. image:: https://get.microsoft.com/images/en-us%20dark.svg
+- .. image:: https://get.microsoft.com/images/en-us%20dark.svg
    :target: https://apps.microsoft.com/detail/quardCRT/9p6102k9qb3t?mode=direct
    :alt: Microsoft Store
+
+- .. image:: https://www.spark-app.store/assets/favicon-96x96-BB0Q9LsV.png
+   :target: https://spk-resolv.spark-app.store/?spk=spk://store/development/quardcrt
+   :alt: Spark Store
 
 ----------------------------------
 Donate
