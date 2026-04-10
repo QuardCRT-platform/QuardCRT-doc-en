@@ -2,15 +2,76 @@
 
 # Scripts
 
-quardCRT supports the script function from version V0.5.0. Scripts are loaded in the form of Python language and can call quardCRT's API to achieve automation.
+quardCRT supports scripting from version V0.5.0. Scripts are written in Python and can call quardCRT's built-in API to automate terminal actions, dialog interaction, screen matching, and file transfer workflows.
 
-## Load Script
+This page is organized as a practical user guide first, followed by the API reference.
 
-Open the main interface, click the `Scripts` in the menu bar, select `Run...`, select the script file, and click `Open` to load the script.
+## What scripts are useful for
 
-## Example
+Typical uses include:
 
-Here is a simple script example that displays the version information of quardCRT.
+- logging in to a device or server with a repeatable sequence
+- waiting for specific prompts before sending the next command
+- automating test or initialization steps
+- launching transfers or small workflow helpers from inside quardCRT
+- generating a starter script by recording a manual session
+
+## Availability
+
+Script support depends on builds that include Python support. If your build does not include the Python runtime integration, script menu actions may be disabled.
+
+## Run a script
+
+To run a Python script from the UI:
+
+1. Open the `Script` menu.
+2. Select `Run...`.
+3. Choose a Python script file.
+4. quardCRT starts the script and disables `Run...` until the current script finishes or is cancelled.
+
+When you run a script successfully from the file picker, quardCRT also adds it to the recent script list so it can be launched again directly from the same menu.
+
+## Cancel a running script
+
+If a script is currently running, use the `Script` menu's cancel action to stop execution.
+
+This is useful when:
+
+- the remote side is no longer responding as expected
+- you launched the wrong script
+- the script is waiting longer than intended
+
+## Record a script
+
+quardCRT can record interactive terminal activity and generate a starter Python script.
+
+From the `Script` menu:
+
+1. Select `Start Recording Script`.
+2. Interact with the current terminal session.
+3. Select `Stop Recording Script...` to save the generated `.py` file.
+
+If you decide not to keep the recording, use `Cancel Recording Script` instead.
+
+### How recorded scripts are generated
+
+The generated file is a Python script that typically contains:
+
+- `crt.Screen.Synchronous = True`
+- `crt.Screen.Send(...)` for captured user input
+- `crt.Screen.WaitForString(...)` for captured received prompts or output boundaries
+
+This gives you a useful starting point, but recorded scripts are not guaranteed to be production-ready. In real use, you often need to clean up prompts, add better waiting logic, or remove unnecessary steps.
+
+## Recent scripts
+
+After running a script from the file picker, quardCRT stores it in the recent script list under the `Script` menu.
+
+If you want to clear that list, use `Clean all recent script`.
+
+## First example
+
+Here is a minimal script that displays the quardCRT version in a message box:
 
 ```python
 import sys
@@ -24,7 +85,9 @@ if __name__ == '__main__':
     main()
 ```
 
-The script loaded by quardCRT is no different from a regular Python script. Now let's explain this script line by line.
+This script is still a normal Python file. The main difference is that quardCRT injects the `quardCRT` module and its automation objects.
+
+What the example does:
 
 - `import sys`: Import the `sys` module to get command line arguments.
 - `from quardCRT import crt`: Import the API of quardCRT.
@@ -34,7 +97,18 @@ The script loaded by quardCRT is no different from a regular Python script. Now 
 - `if __name__ == '__main__':`: Determine whether the script is run as the main program.
 - `main()`: Call the `main` function to execute the main logic of the script.
 
-## API
+## A practical automation pattern
+
+For terminal automation, a common pattern is:
+
+1. Get the active screen or session.
+2. Send a command with `crt.Screen.Send(...)`.
+3. Wait for the next expected prompt with `crt.Screen.WaitForString(...)` or `crt.Screen.WaitForStrings(...)`.
+4. Repeat until the workflow is finished.
+
+This pattern is usually more reliable than blindly sleeping for fixed time intervals.
+
+## API overview
 
 The API of quardCRT includes the following parts:
 
@@ -48,6 +122,8 @@ The API of quardCRT includes the following parts:
 - `crt.FileTransfer`: Used to operate file transfer.
 - `crt.CommandWindow`: Used to operate the command window.
 - `crt.Tab`: Used to manage the tab group.
+
+The remainder of this page is a reference for these objects.
 
 ### crt
 

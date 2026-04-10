@@ -4,6 +4,8 @@
 
 ## [[Unrelease](https://github.com/QQxiaoming/quardCRT)]
 
+## [[V0.6.0](https://github.com/QQxiaoming/quardCRT/releases/tag/V0.6.0)] - 2026-04-10
+
 - Fix the main window error raise
 - Add the ability to add custom data to the log
 - Improve the log file path setting option
@@ -11,6 +13,12 @@
 - Add terminal recording video feature
 - Raw protocol adds four modes TCP Client, TCP Server, UDP Send, UDP Receive
 - Add view own log window for quardCRT self debug
+- Improve tftp protocol logic
+- Support the display of flag symbols in Emoji
+- Improve terminal content matching feature
+- Fix the problem that the terminal freezes under specific characters in specific cases on linux
+- Fix the problem that the serial port cannot be opened when the serial port driver does not support Break on linux
+- Fix the problem that some resources are not correctly released after the floating window is closed [#50](https://github.com/QQxiaoming/quardCRT/issues/50)
 
 ## [[V0.5.1](https://github.com/QQxiaoming/quardCRT/releases/tag/V0.5.1)] - 2024-09-26
 
