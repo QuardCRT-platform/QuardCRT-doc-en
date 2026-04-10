@@ -69,6 +69,20 @@ After running a script from the file picker, quardCRT stores it in the recent sc
 
 If you want to clear that list, use `Clean all recent script`.
 
+## Example scripts in this repository
+
+The repository also includes small example scripts under `test/scriptengine/` that you can run and modify.
+
+Useful starting points include:
+
+- `test/scriptengine/session/prompted_ssh2.py`: prompt for host, port, username, and password, then connect with SSH2
+- `test/scriptengine/session/prompted_telnet_login.py`: connect with Telnet and complete a login sequence by waiting for login, password, and shell prompts
+- `test/scriptengine/screen/send_command_and_capture.py`: send a command to the active session and read output until a prompt is matched
+- `test/scriptengine/screen/save_screen_to_file.py`: save the current visible screen text to a local file
+- `test/scriptengine/misc/repeat_command_logger.py`: run the same command multiple times and save each round of output to a log file
+- `test/scriptengine/tab/send_to_all_sessions.py`: send the same command to every session in the active tab group
+- `test/scriptengine/filetransfer/zmodem_upload_dialog.py`: select a local file and start a Zmodem upload
+
 ## First example
 
 Here is a minimal script that displays the quardCRT version in a message box:
@@ -481,7 +495,7 @@ It includes the following parts:
         screen.SendKeys(["Ctrl", "Alt", "Del"])
         ```
 
-- `Screen.Screen_ReadString(strlist: list[str], timeout: int, bcaseInsensitive: bool) -> str`：Read text data until the specified text list appears on the screen.
+- `Screen.ReadString(strlist: list[str], timeout: int, bcaseInsensitive: bool) -> str`：Read text data until the specified text list appears on the screen.
     - Parameter:
         - `strlist`: The specified text list.
         - `timeout`: Timeout time.
@@ -490,7 +504,7 @@ It includes the following parts:
     - Example:
 
         ```python
-        text = screen.Screen_ReadString(["Hello", "quardCRT"], 1000, False)
+        text = screen.ReadString(["Hello", "quardCRT"], 1000, False)
         ```
 
 - `Screen.WaitForCursor(row: int, col: int, timeout: int) -> bool`：Wait for the cursor to move to the specified position. (Not implemented yet)
